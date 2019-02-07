@@ -1,0 +1,89 @@
+#jms_serializer:
+#    metadata:
+#        auto_detection: false
+#        directories:
+#            App:
+#                namespace_prefix: "App"
+#                path: "%kernel.project_dir%/config/serializer"
+
+#    metadata:
+#        directories:
+#            custom-sylius-product:
+#                namespace_prefix: "Sylius\\Component\\Product\\Model"
+#                path: "App/config/serializer"
+                
+                
+#jms_serializer:
+#    visitors:
+#        xml:
+#            format_output: '%kernel.debug%'
+
+
+
+
+
+
+
+
+## config.yml
+#jms_serializer:
+#    handlers:
+#        datetime:
+#            default_format: "c" 
+#            default_timezone: "UTC" 
+#    property_naming:
+#        separator:  _
+#        lower_case: true
+#    metadata:
+#        cache: file
+#        debug: "%kernel.debug%"
+#        file_cache:
+#            dir: "%kernel.cache_dir%/serializer"
+#        auto_detection: false
+#        directories:
+##            any-name:
+##                namespace_prefix: "App"
+##                path: "%kernel.project_dir%/config/serializer"
+#                
+#            name-tany-khales:
+#                namespace_prefix: "Sylius\\Component\\Core"
+#                path: "%kernel.project_dir%/config/serializer"
+#    visitors:
+#        json:
+#            options: 0 
+ 
+      
+      
+# config.yml
+#jms_serializer:
+#    metadata:
+#        directories:
+#            name-tany-khales:
+#                namespace_prefix: "App"
+#                path: "%kernel.project_dir%/src/Entity"
+
+
+
+
+
+#
+#jms_serializer:
+#    metadata:
+#        directories:
+#            custom-sylius-product::
+#                namespace_prefix: "Sylius\\Component\\Product"
+#                path: "%kernel.project_dir%/config/serializer"
+#               # path: "@App/Resources/config/serializer"
+ 
+               
+               
+               
+               
+               
+jms_serializer:
+    metadata:
+        directories:
+            custom-sylius-product:
+                namespace_prefix: "Sylius\\Component\\Product\\Model"
+                path: "%kernel.project_dir%/config/serializer"
+                

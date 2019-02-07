@@ -1,0 +1,20 @@
+# config/routes.yaml
+api_gesdinet_jwt_refresh_token:
+    path:     /token/refresh
+    methods: [POST]
+    defaults: { _controller: gesdinet.jwtrefreshtoken:refresh }
+    
+    
+api:
+    resource: "routes/api/routes.yaml"
+    prefix:   /api/
+    type: rest
+
+
+
+
+api_login_check:
+    path: /api/login_check
+  
+    
+    

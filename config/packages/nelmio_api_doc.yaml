@@ -1,0 +1,39 @@
+nelmio_api_doc:
+    documentation:
+        securityDefinitions:
+            Bearer:
+                type: apiKey
+                description: 'Value: Bearer {jwt}'
+                name: Authorization
+                in: header
+        security:
+            - Bearer: []
+        info:
+            title: My App
+            description: This is an awesome app!
+            version: 1.0.0
+    areas: # to filter documented areas
+        path_patterns:
+            - ^/api(?!/doc$) # Accepts routes under /api except /api/doc
+# app/config/config.yml
+
+#nelmio_api_doc:
+#    sandbox:
+#        authentication:            
+#            name: access_token      # access token name or query parameter name or header name
+#            delivery: http         
+#            type:     basic       
+#            custom_endpoint: true   
+#        enabled:  true             
+#        endpoint: http://sandbox.example.com/  
+#        accept_type: application/json         
+#        body_format:
+#            formats: [ form, json ]            
+#            default_format: form              
+#        request_format:
+#            formats:                         
+#                json: application/json          
+#                xml: application/xml           
+#            method: format_param   
+#            default_format: json
+#        entity_to_choice: false

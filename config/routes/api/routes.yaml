@@ -1,0 +1,4 @@
+page:
+    type:   rest
+    resource: 'App\Controller\Api\ApiController'
+

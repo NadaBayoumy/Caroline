@@ -1,0 +1,14 @@
+App\Utils\API\ApiResponse:
+    exclusion_policy: ALL
+    properties:
+        status:
+            expose: true
+            groups: [ api_response ]
+        data:
+            expose: true
+            groups: [ api_response ]
+        error:
+            expose: true
+            groups: [ api_response ]
+
+
